@@ -626,6 +626,10 @@ app.get("/", (req, res) => {
   res.send("File Generation API Running");
 });
 
+app.get("/health", (req, res) => {
+  res.json({ status: 'ok' });
+});
+
 // ==========================================
 // START
 // ==========================================
